@@ -8,6 +8,7 @@ import org.junit.jupiter.api.Test;
 import java.time.Duration;
 
 import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assumptions.assumeTrue;
 
 /**
  * Created by Rami SAHRAOUI on 17/11/2023
@@ -52,5 +53,14 @@ class IndexControllerTest {
             Thread.sleep(5000);
             System.out.println("I couldn't be here!!!");
         });
+    }
+
+    @Test
+    void testAssumption() {
+        assumeTrue("SAHRAOUI".equalsIgnoreCase(System.getenv("SAHRAOUI_RUNTIME")));
+    }
+    @Test
+    void testAssumptionTrue() {
+        assumeTrue("SAHRAOUI".equalsIgnoreCase("SAHRAOUI"));
     }
 }
