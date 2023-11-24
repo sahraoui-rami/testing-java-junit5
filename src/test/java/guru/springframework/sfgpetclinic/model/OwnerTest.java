@@ -1,5 +1,6 @@
 package guru.springframework.sfgpetclinic.model;
 
+import guru.springframework.sfgpetclinic.ModelTests;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
@@ -10,8 +11,7 @@ import static org.junit.jupiter.api.Assertions.*;
 /**
  * Created by Rami SAHRAOUI on 18/11/2023
  */
-@Tag("model")
-class OwnerTest {
+class OwnerTest implements ModelTests {
     @Test
     void dependentAssertions() {
         // given
