@@ -1,5 +1,6 @@
 package guru.springframework.sfgpetclinic.model;
 
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import static org.hamcrest.CoreMatchers.is;
@@ -9,6 +10,7 @@ import static org.junit.jupiter.api.Assertions.*;
 /**
  * Created by Rami SAHRAOUI on 18/11/2023
  */
+@Tag("model")
 class OwnerTest {
     @Test
     void dependentAssertions() {

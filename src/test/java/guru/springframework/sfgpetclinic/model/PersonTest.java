@@ -1,5 +1,6 @@
 package guru.springframework.sfgpetclinic.model;
 
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -7,6 +8,7 @@ import static org.junit.jupiter.api.Assertions.*;
 /**
  * Created by Rami SAHRAOUI on 17/11/2023
  */
+@Tag("model")
 class PersonTest {
     @Test
     void groupedAssertions() {
