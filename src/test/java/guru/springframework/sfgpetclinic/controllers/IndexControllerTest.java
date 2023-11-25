@@ -31,7 +31,7 @@ class IndexControllerTest implements ControllerTests {
                 "Make me only if you have to");
 
         assertThat(controller.index()).isEqualTo("index");
-        assertThat(controller.index()).as("Test View Name").withFailMessage("Wrong View Returned").isEqualTo("indexes");
+        assertThat(controller.index()).as("Test View Name").withFailMessage("Wrong View Returned").isEqualTo("index");
     }
 
     @Test
